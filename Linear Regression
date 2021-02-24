@@ -35,4 +35,9 @@ All about Linear Regression
   
     Sigmoid function = Y = 1/ 1 - e^-x ==> Trying to convert independent variable into expression of probability WRT to dependent variabel (range 0-1)
     
+    eg. fraud detection, disease detection 
     
+     Data points should be free of missing points
+     30-50 data points for each class = total - 60-100 data points 
+     
+     
