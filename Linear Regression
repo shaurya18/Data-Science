@@ -1,0 +1,38 @@
+
+All about Linear Regression
+
+> What is regression analysis ?
+
+  Linear Regression
+    -> linear nature which means as the value of X axis data points increases, value of Y axis data points also increases
+    -> directly proportional 
+    
+    Simple Linear Regression - refers to single factor dependency i.e. 1 independent variable only
+      Y = m X1 + c 
+      c = intercept
+      m = slope
+    
+    Multiple Linear Regression - refers to multiple factors dependency i.e. multiple independent variable only
+      Y = m1 X1 + m2 X2 + .... + mn Xn + c
+
+  Regression is based on independent and dependent variables. With the help of regression, we can find out the value of Y (dependent variable as its value depends on X1,X2,X3) as   per the value of independent variables. Essentially, we try to find a relation between these dependent and independent variable.
+
+  Linear Regression can only be used if the dependent variable (output variable) is CONTINOUS and NUMERICAL
+
+  Example: Predicting annual sales for a firm
+
+    Y : independent variable = annual sales
+    X1: dependent variable = factors that may impact = employee count 
+    X2: dependent variable = factors that may impact = profit
+    X3: dependent variable = factors that may impact = loss
+
+    Y = a X1 + b X2 + c X3 
+    a = b = c = Coefficient of regression = (thesse are the numbers which define the importance of that particular feature; Higher the value of coeeficient, more will be the value change/strong support/imapct on the dependent variable)
+
+  Logistic Regression - BINARY CLASSIFICATION 
+      
+    Logistic rergression is used when dependent variable is categorical type
+  
+    Sigmoid function = Y = 1/ 1 - e^-x ==> Trying to convert independent variable into expression of probability WRT to dependent variabel (range 0-1)
+    
+    
