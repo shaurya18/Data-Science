@@ -7,13 +7,22 @@ All about Linear Regression
     -> linear nature which means as the value of X axis data points increases, value of Y axis data points also increases
     -> directly proportional 
     
+    Objective = To find out the best fit line among these data points
+    
     Simple Linear Regression - refers to single factor dependency i.e. 1 independent variable only
       Y = m X1 + c 
-      c = intercept
-      m = slope
+      c = intercept/ constant
+      m = slope - it helps to identify what is the change in Y when we change the value of X
+        
+      How to identify the best line among different lines  -
+       If there are multiple lines, then find out the distance of points to the line (error) and then add all the errors. The best line would be the line which has least error.
+     
     
     Multiple Linear Regression - refers to multiple factors dependency i.e. multiple independent variable only
       Y = m1 X1 + m2 X2 + .... + mn Xn + c
+
+
+
 
   Regression is based on independent and dependent variables. With the help of regression, we can find out the value of Y (dependent variable as its value depends on X1,X2,X3) as   per the value of independent variables. Essentially, we try to find a relation between these dependent and independent variable.
 
@@ -27,7 +36,7 @@ All about Linear Regression
     X3: dependent variable = factors that may impact = loss
 
     Y = a X1 + b X2 + c X3 
-    a = b = c = Coefficient of regression = (thesse are the numbers which define the importance of that particular feature; Higher the value of coeeficient, more will be the value change/strong support/imapct on the dependent variable)
+    a = b = c = Coefficient of regression = (these are the numbers which define the importance of that particular feature; Higher the value of coeeficient, more will be the value change/strong support/imapct on the dependent variable)
 
   Logistic Regression - BINARY CLASSIFICATION 
       
@@ -41,3 +50,48 @@ All about Linear Regression
      30-50 data points for each class = total - 60-100 data points 
      
      
+     
+     
+     
+     
+     
+     
+     
+     
+Regularisation
+  
+  Y = m1 X1 + m2 X2 + .... + mn Xn + c
+  
+  Let's say mn=45 then this will be very computationally expensive as it would perform multiplication for each record.
+  To reduce the complexity of the model and scale down/shrink the magnitude of the value Mn (regression coefficient), we use regularisation techniques
+  
+
+Ridge Regression 
+  
+  Ridge = Loss + P ||w||^2
+  
+    Loss = difference between the actual and predicted value
+    
+    penalty = compensation of the loss' used to reduce the loss (by inducing the penalty here)
+    
+      P = constant 
+      w = coefficient 
+        || || - means sum of all the squared value of the coefficients 
+      || w ||^2 = w1^2 + w2^2 + w3^2 + w4^2 + w5^2 +.....+ wn^2
+   
+   
+  Lasso = Loss + P ||w||
+        
+        || w || = w1 + w2 + w3 + w4 + w5 +.....+ wn
+        
+        Magnitude of coeeficient can be exactly 0
+        
+        Can also be used for feature selection as some of the features can be dropped becasue coefficients can become 0 
+        
+
+
+
+Polynomial Regression 
+
+  Linear Regression can be used for prediciton in linear datasets, however linear regression cannot be applied on the non-linear datasets directly it has to be modified
+
